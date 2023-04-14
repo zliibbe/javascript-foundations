@@ -7,8 +7,10 @@ const createVampire = (name, pet = 'bat') => {
   }
 }
 
-const drink = () => {
-  
+const drink = (vampire) => {
+  vampire.ouncesDrank += 10
+
+  return vampire
 }
 
 const findBatLovers = () => {
