@@ -10,6 +10,10 @@ const createVampire = (name, pet = 'bat') => {
 const drink = (vampire) => {
   vampire.ouncesDrank += 10
 
+  if (vampire.ouncesDrank >= 50) {
+    vampire.thirsty = false
+  }
+
   return vampire
 }
 
