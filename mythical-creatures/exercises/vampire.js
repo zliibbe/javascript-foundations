@@ -3,7 +3,8 @@ const createVampire = (name, pet = 'bat') => {
     name: name,
     pet: pet, 
     thirsty: true,
-    ouncesDrank: 0
+    ouncesDrank: 0, 
+    
   }
 }
 
@@ -18,8 +19,13 @@ const drink = (vampire) => {
   return vampire
 }
 
-const findBatLovers = () => {
-  
+const findBatLovers = (vampires) => {
+  let batlovers =  vampires.filter(vampire => vampire.pet === 'bat')
+
+  for(let i=0; i< batlovers.length; i++){
+    batlovers[i] = batlovers[i].name
+  }
+  return batlovers
 }
 
 const encounterDeliciousVictim = (vampire) => {
