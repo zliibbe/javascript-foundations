@@ -23,6 +23,10 @@ const findBatLovers = () => {
 }
 
 const encounterDeliciousVictim = (vampire) => {
+  if(vampire.ouncesDrank >= 50) {
+    return `No thanks, I am too full.`
+  }
+  
   return 'I WANT TO SUCK YOUR BLOOD!'
 }
 
