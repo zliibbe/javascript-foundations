@@ -34,6 +34,7 @@ const inquirePlace = (locations, location) => {
   if (locations.includes(location)) {
     return `Yes, I have spent some time in ${location}.`
   } else {
+    return `No, I have never been to ${location}.`
   }
   
 }
