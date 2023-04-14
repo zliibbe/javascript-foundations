@@ -38,11 +38,18 @@ const meetPeople = (hobbitObj, peopleArr) => {
 }
 
 const findFriends = (hobbitObj) => {
-  console.log(hobbitObj);
-  return hobbitObj.acquaintances.filter( hobbit => {
-     return hobbit.relationship === 'friend'
-  })
-}
+    let friends = hobbitObj.acquaintances.filter( hobbit => {
+      if(hobbit.relationship === 'friend') {
+        return hobbit.name
+      }
+    })
+
+      for(let i=0; i< friends.length; i++){
+        friends[i] = friends[i].name
+      }
+      return friends
+  }
+
 
 module.exports = {
   createHobbit, 
