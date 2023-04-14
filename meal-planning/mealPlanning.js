@@ -1,9 +1,10 @@
 const createMeal = (mealType, calorieGoal) => {
   let meal = {
     type: mealType,
-    calorieGoal: calorieGoal
+    calorieGoal: calorieGoal,
+    dishes: []
   }
-  
+
   return meal
 }
 

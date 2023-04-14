@@ -12,7 +12,7 @@ describe("Meal Planning", function () {
     assert.equal(simpleLunch.calorieGoal, 400);
   });
 
-  it.skip("should default to having no dishes", function() {
+  it("should default to having no dishes", function() {
     var breakfast = createMeal('breakfast', 700);
     assert.deepEqual(breakfast.dishes, []);
   });
