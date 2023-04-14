@@ -30,7 +30,11 @@ const encounterDeliciousVictim = (vampire) => {
   return 'I WANT TO SUCK YOUR BLOOD!'
 }
 
-const inquirePlace = () => {
+const inquirePlace = (locations, location) => {
+  if (locations.includes(location)) {
+    return `Yes, I have spent some time in ${location}.`
+  } else {
+  }
   
 }
 
