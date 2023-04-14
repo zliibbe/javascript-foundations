@@ -1,7 +1,8 @@
 const createVampire = (name, pet = 'bat') => {
   return vampire = {
     name: name,
-    pet: pet
+    pet: pet, 
+    thirsty: true
   }
 }
 
