@@ -1,7 +1,7 @@
-const createVampire = (name) => {
+const createVampire = (name, pet = 'bat') => {
   return vampire = {
     name: name,
-    pet: 'bat'
+    pet: pet
   }
 }
 
