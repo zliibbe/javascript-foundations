@@ -17,7 +17,7 @@ describe("Meal Planning", function () {
     assert.deepEqual(breakfast.dishes, []);
   });
 
-  it.skip("should add a dish to a meal", function() {
+  it("should add a dish to a meal", function() {
     var meal = createMeal("dinner", 500);
     var mealWithSpaghetti = addDish(meal, { name: "spaghetti", calories: 300 });
 

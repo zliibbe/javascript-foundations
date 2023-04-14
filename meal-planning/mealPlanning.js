@@ -8,8 +8,9 @@ const createMeal = (mealType, calorieGoal) => {
   return meal
 }
 
-const addDish = () => {
-  
+const addDish = (meal, dish) => {
+  meal.dishes.push(dish)
+  return meal
 }
 
 const calculateCalories = () => {
