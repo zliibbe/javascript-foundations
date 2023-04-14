@@ -14,8 +14,8 @@ const findBatLovers = () => {
   
 }
 
-const encounterDeliciousVictim = () => {
-  
+const encounterDeliciousVictim = (vampire) => {
+  return 'I WANT TO SUCK YOUR BLOOD!'
 }
 
 const inquirePlace = () => {
