@@ -1,2 +1,22 @@
+const createMeal = (mealType, calorieGoal) => {
+  let meal = {
+    type: mealType,
+    calorieGoal: calorieGoal
+  }
+  
+  return meal
+}
 
-module.exports = { }
+const addDish = () => {
+  
+}
+
+const calculateCalories = () => {
+  
+}
+
+module.exports = { 
+  createMeal,
+  addDish,
+  calculateCalories
+}

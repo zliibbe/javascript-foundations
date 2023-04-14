@@ -2,8 +2,8 @@ var { createMeal, addDish, calculateCalories } = require('./mealPlanning.js');
 var assert = require('chai').assert;
 
 describe("Meal Planning", function () {
-  it.skip("should create a meal with a dynamic type and calorie goal", function() {
-    var easyBreakfast = createMeal('breakfast', 700);
+  it("should create a meal with a dynamic type and calorie goal", function() {
+    var easyBreakfast = createMeal("breakfast", 700);
     var simpleLunch = createMeal("lunch", 400);
 
     assert.equal(easyBreakfast.type, 'breakfast');
