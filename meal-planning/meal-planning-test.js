@@ -45,7 +45,7 @@ describe("Meal Planning", function () {
     assert.equal(mealWithPizza.dishes.length, 0);
   });
 
-  it.skip("should update the calorieGoal when dishes are added", function() {
+  it("should update the calorieGoal when dishes are added", function() {
     var meal = createMeal("breakfast", 400);
     var mealWithEggs = addDish(meal, { name: "eggs", calories: 200 });  
 
