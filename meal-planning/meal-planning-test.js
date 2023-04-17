@@ -56,7 +56,7 @@ describe("Meal Planning", function () {
     assert.equal(mealWithPancake.calorieGoal, 20);
   });
 
-  it.skip("should calculate the total meal calories", function() {
+  it("should calculate the total meal calories", function() {
     var brunch = createMeal("brunch", 700);
     var brunchWithOmelette = addDish(brunch, { name: "omelette", calories: 450 });
     var brunchWithFruit = addDish(brunchWithOmelette, { name: "fruit", calories: 100 });

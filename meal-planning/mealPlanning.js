@@ -20,8 +20,13 @@ let calTotal = 0;
   return meal
 }
 
-const calculateCalories = () => {
+const calculateCalories = (meal) => {
+  let totalCal = 0
+  meal.dishes.forEach(dish =>{
+      totalCal += dish.calories
+  })
   
+  return `${meal.type} has a total of ${totalCal} calories.`
 }
 
 module.exports = { 
