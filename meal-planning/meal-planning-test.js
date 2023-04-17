@@ -66,7 +66,7 @@ describe("Meal Planning", function () {
     assert.equal(totalCalorieCount, "brunch has a total of 550 calories.");
   });
 
-  it.skip("should calculate a different meal's calories", function() {
+  it("should calculate a different meal's calories", function() {
     var dinner = createMeal("dinner", 1200);
     var dinnerWithSoup = addDish(dinner, { name: "soup", calories: 250 });
     var dinnerWithBeans = addDish(dinnerWithSoup, { name: "green beans", calories: 200 });
