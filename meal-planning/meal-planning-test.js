@@ -24,7 +24,7 @@ describe("Meal Planning", function () {
     assert.deepEqual(mealWithSpaghetti.dishes, [{ name: "spaghetti", calories: 300 }]);
   });
 
-  it.skip("should add another dish to a meal", function() {
+  it("should add another dish to a meal", function() {
     var meal = createMeal("dinner", 600);
     var mealWithSpaghetti = addDish(meal, { name: "spaghetti", calories: 300 });
     var mealWithBread = addDish(mealWithSpaghetti, { name: "garlic bread", calories: 200 });
@@ -32,7 +32,7 @@ describe("Meal Planning", function () {
     assert.deepEqual(mealWithBread.dishes, [{ name: "spaghetti", calories: 300 }, { name: "garlic bread", calories: 200 }]);
   });
 
-  it.skip("should only add a dish if it meets or is below the meal's calorie goal", function() {
+  it("should only add a dish if it meets or is below the meal's calorie goal", function() {
     var meal = createMeal("dinner", 700);
     var mealWithBread = addDish(meal, { name: "garlic bread", calories: 200 });
 

@@ -9,7 +9,11 @@ const createMeal = (mealType, calorieGoal) => {
 }
 
 const addDish = (meal, dish) => {
-  meal.dishes.push(dish)
+  let calTotal = 0
+
+  if (calTotal+dish.calories < meal.calorieGoal ) {
+    meal.dishes.push(dish)
+  }
   return meal
 }
 
