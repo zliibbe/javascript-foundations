@@ -32,7 +32,7 @@ describe('favorite foods', function () {
       assert.deepEqual(sushi.ingredients, ['Rice', 'Salmon', 'Tuna', 'Avocado', 'Cucumber', 'Soy Sauce', 'Wasabi']);
    });
 
-   it.skip('should be spicy or not', function () {
+   it('should be spicy or not', function () {
       var pancakes = createFavoriteFood({ dish: 'Pancakes', ingredients: ['Flour', 'Egg', 'Milk', 'Butter', 'Maple Syrup'], isSpicy: false });
       var padThai = createFavoriteFood({ dish: 'Pad Thai', ingredients: ['Rice Noodles', 'Shrimp', 'Tofu', 'Egg', 'Bean Sprouts', 'Peanuts', 'Lime'], isSpicy: true });
 

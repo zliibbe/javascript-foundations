@@ -1,7 +1,8 @@
 const createFavoriteFood = (dishObj) => {
     return {
       name: dishObj.dish,
-      ingredients: dishObj.ingredients
+      ingredients: dishObj.ingredients,
+      isSpicy: dishObj.isSpicy
     }
 }
 
