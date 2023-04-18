@@ -15,8 +15,8 @@ const commentOnSpiciness = (dishObj) => {
   return `Phew, this ${dishObj.name} is not very spicy.`
 }
 
-const orderFood = () => {
-
+const orderFood = (dishObj) => {
+    return dishObj.timesOrdered++
 }
 
 
