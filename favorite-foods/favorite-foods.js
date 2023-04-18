@@ -1,4 +1,10 @@
+const createFavoriteFood = (dishObj) => {
+    return {
+      name: dishObj.dish
+    }
+}
 
 
-
-module.exports = { };
+module.exports = { 
+  createFavoriteFood
+};
