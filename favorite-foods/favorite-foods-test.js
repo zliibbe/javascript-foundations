@@ -62,7 +62,7 @@ describe('favorite foods', function () {
       assert.equal(dish.timesOrdered, 0);
    });
 
-   it.skip('should be able to order dishes', function () {
+   it('should be able to order dishes', function () {
       var dish1 = createFavoriteFood({ dish: 'Fish and Chips', ingredients: ['Fish Fillet', 'Potatoes', 'Flour', 'Egg', 'Beer', 'Tartar Sauce'], isSpicy: false });
       var dish2 = createFavoriteFood({ dish: 'Chicken Curry', ingredients: ['Chicken', 'Coconut Milk', 'Onion', 'Garlic', 'Rice'], isSpicy: true });
       var dish3 = createFavoriteFood({ dish: 'Ice Cream', ingredients: ['Milk', 'Cream', 'Sugar', 'Vanilla Extract', 'Chocolate Chips'], isSpicy: false });

@@ -16,7 +16,8 @@ const commentOnSpiciness = (dishObj) => {
 }
 
 const orderFood = (dishObj) => {
-    return dishObj.timesOrdered++
+    dishObj.timesOrdered++
+    return dishObj
 }
 
 
