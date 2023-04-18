@@ -20,9 +20,19 @@ const orderFood = (dishObj) => {
     return dishObj
 }
 
+const createShoppingList = (dishes) => {
+  const list = []
+  dishes.forEach(dish => {
+    list.push(dish.ingredients)
+  })
+
+  return list.flat()
+}
+
 
 module.exports = { 
   createFavoriteFood,
   commentOnSpiciness,
-  orderFood
+  orderFood,
+  createShoppingList
 };
