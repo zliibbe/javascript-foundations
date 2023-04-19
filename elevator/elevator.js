@@ -17,8 +17,11 @@ const changeFloors = (elevatorObj, floor) => {
   return `Taking you to floor ${floor}!`
 }
 
-const dropOffPassenger = () => {
-  
+const dropOffPassenger = (elevatorObj, passenger) => {
+  return elevatorObj.passengers.filter(rider => {
+    return rider !== passenger
+  })
+
 }
 
 module.exports = { 
