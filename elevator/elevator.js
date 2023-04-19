@@ -7,8 +7,12 @@ const createElevator = (name, floors, currentFloor, passengers) => {
   }
 }
 
-const changeFloors = () => {
-  
+const changeFloors = (elevatorObj, floor) => {
+  elevatorObj.currentFloor = floor;
+
+  return `Taking you to floor ${floor}!`
+
+
 }
 
 const dropOffPassenger = () => {

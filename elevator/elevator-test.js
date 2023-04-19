@@ -11,7 +11,7 @@ describe('Elevator', function() {
     assert.deepEqual(elevator.passengers, ['Stacey', 'Javier', 'Tom']);
   });
 
-  it.skip('should be able to change floors', function() {
+  it('should be able to change floors', function() {
     var elevator = createElevator('Empire State Building', 102, 5, []);
 
     var message = changeFloors(elevator, 10);
