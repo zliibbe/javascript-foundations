@@ -8,6 +8,8 @@ const createElevator = (name, floors, currentFloor, passengers) => {
 }
 
 const changeFloors = (elevatorObj, floor) => {
+  if(floor === elevatorObj.currentFloor) return `You\'re already on floor ${floor}!`
+  
   elevatorObj.currentFloor = floor;
 
   return `Taking you to floor ${floor}!`
