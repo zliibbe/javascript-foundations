@@ -1,5 +1,10 @@
-const createElevator = () => {
-
+const createElevator = (name, floors, currentFloor, passengers) => {
+  return {
+     building: name,
+     floors: floors,
+     currentFloor: currentFloor,
+     passengers: passengers
+  }
 }
 
 const changeFloors = () => {
