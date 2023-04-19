@@ -2,7 +2,7 @@ var assert = require('chai').assert;
 var { createElevator, changeFloors, dropOffPassenger } = require('./elevator');
 
 describe('Elevator', function() {
-  it.skip('should create an elevator', function() {
+  it('should create an elevator', function() {
     var elevator = createElevator('Empire State Building', 102, 5, ['Stacey', 'Javier', 'Tom']);
 
     assert.equal(elevator.building, 'Empire State Building');
